@@ -1,0 +1,9 @@
+{
+  "name": "scalient-playbook",
+  "version": "0.9.0",
+  "description": "Software development best practices from Scalient LLC.",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0"
+  }
+}
