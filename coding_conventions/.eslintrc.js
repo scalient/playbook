@@ -13,6 +13,7 @@ module.exports = {
     SharedArrayBuffer: "readonly",
   },
   parserOptions: {
+    parser: "babel-eslint",
     ecmaVersion: 11,
     sourceType: "module",
   },
@@ -44,6 +45,10 @@ module.exports = {
     "comma-dangle": [
       "error",
       "always-multiline",
+    ],
+    "no-console": [
+      "error",
+      {allow: ["warn", "error"]},
     ],
   },
 };
