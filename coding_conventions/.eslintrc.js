@@ -50,5 +50,9 @@ module.exports = {
       "error",
       {allow: ["warn", "error"]},
     ],
+    "eqeqeq": [
+      "error",
+      "always",
+    ],
   },
 };
