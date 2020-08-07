@@ -53,6 +53,15 @@ module.exports = {
     indent: [
       'error',
       2,
+      {
+        /*
+         * `switch` cases need another level of indentation since they might have their own lexical scope and `switch`
+         * itself demands curly braces.
+         */
+        SwitchCase: 1,
+        /* A workaround for `https://github.com/babel/babel-eslint/issues/681`. */
+        ignoredNodes: ['TemplateLiteral'],
+      },
     ],
     /* Improves readability of keywords. */
     'keyword-spacing': [
