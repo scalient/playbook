@@ -2,9 +2,7 @@
 
 This is Scalient LLC's official repository of coding standards, suggested library use, and design patterns. It is the
 culmination of a decade of trial-and-error among the principals to write web-based software in a scale-free manner,
-meaning that the one does not hit a technical wall when confronted with problems of ever larger complexity. While it's
-quite an ambitious claim a solution to a significant portion of human endeavour, curing cancer is still more daunting
-than having a comprehensive approach to webapp design and development.
+meaning that the one does not hit a technical wall when confronted with problems of ever larger complexity.
 
 ### License
 
