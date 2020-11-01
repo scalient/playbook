@@ -102,7 +102,10 @@ module.exports = {
     /* Disallows unused variables. */
     'no-unused-vars': [
       'error',
-      {argsIgnorePattern: '^_'},
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
     ],
     /*
      * Disallows spaces inside of curly braces for consistency.
