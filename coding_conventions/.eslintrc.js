@@ -162,5 +162,12 @@ module.exports = {
       'error',
       'never',
     ],
+    /**
+     * Binary operators should be surrounded by spaces.
+     */
+    'space-infix-ops': [
+      'error',
+      {'int32Hint': false},
+    ],
   },
 };
