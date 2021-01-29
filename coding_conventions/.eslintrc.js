@@ -62,6 +62,11 @@ module.exports = {
         ignoredNodes: ['TemplateLiteral'],
       },
     ],
+    /* Object keys should be followed by a colon, followed by exactly one space, followed by the value. */
+    'key-spacing': [
+      'error',
+      {},
+    ],
     /* Improves readability of keywords. */
     'keyword-spacing': [
       'error',
@@ -84,6 +89,11 @@ module.exports = {
     'no-console': [
       'error',
       {allow: ['warn', 'error']},
+    ],
+    /* Disallows extra spaces in between lexical constructs. */
+    'no-multi-spaces': [
+      'error',
+      {'ignoreEOLComments': true},
     ],
     /* Disallows too many empty lines. */
     'no-multiple-empty-lines': [
@@ -118,6 +128,21 @@ module.exports = {
     'object-curly-newline': [
       'error',
       {consistent: true},
+    ],
+    /**
+     * Binary operators straddling different lines should be placed before the line break, like so:
+     *
+     * ```
+     * let sum = 1 +
+     *         2 +
+     *         3;
+     * ```
+     *
+     * Although this style looks awkward, it not-so-subtly hints to the parser which production rules to expect.
+     */
+    'operator-linebreak': [
+      'error',
+      'after',
     ],
     /*
      * Single and double quotes are equivalent in JavaScript, except using single quotes frees us up to not escape
