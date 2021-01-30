@@ -38,6 +38,22 @@ module.exports = {
       'error',
       'all',
     ],
+    /*
+     * Dots pertaining to property access and function calls should be placed before the line break, like so:
+     *
+     * ```
+     * let joined = ''.
+     *   concat('1').
+     *   concat('2').
+     *   concat('3');
+     * ```
+     *
+     * Although this style looks awkward, it not-so-subtly hints to the parser which production rules to expect.
+     */
+    'dot-location': [
+      'error',
+      'object',
+    ],
     /* Files should end with a newline. */
     'eol-last': [
       'error',
