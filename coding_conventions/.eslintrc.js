@@ -17,6 +17,16 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    /**
+     * The arrow function's arrow should be preceded and succeeded by a space.
+     */
+    'arrow-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+      },
+    ],
     /* Dangling commas enforce consistency and make diffs easy on the eye. */
     'comma-dangle': [
       'error',
