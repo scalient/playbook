@@ -103,6 +103,10 @@ Style/HashConversion:
 Style/IfUnlessModifier:
   Enabled: false
 
+# Don't enforce conversion of `select` to `reject` because consistency may supersede brevity.
+Style/InverseMethods:
+  Enabled: false
+
 # Prefer the `->` syntax for lambdas.
 Style/Lambda:
   EnforcedStyle: literal
