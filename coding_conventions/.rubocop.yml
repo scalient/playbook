@@ -74,6 +74,10 @@ Layout/MultilineOperationIndentation:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+# Don't group accessors because simplicity supersedes brevity.
+Style/AccessorGrouping:
+  Enabled: false
+
 # Prefer `alias_method` because `alias` uses special syntax.
 Style/Alias:
   EnforcedStyle: prefer_alias_method
