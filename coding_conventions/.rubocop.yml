@@ -46,10 +46,6 @@ Layout/DotPosition:
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
 
-# Prefer to not mess with the last argument of a hash.
-Layout/HashAlignment:
-  EnforcedLastArgumentHashStyle: always_ignore
-
 # Prefer consistency and density over a better-looking heredoc.
 Layout/HeredocIndentation:
   Enabled: false
