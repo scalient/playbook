@@ -95,6 +95,11 @@ Style/EmptyMethod:
 Style/ExpandPathArguments:
   Enabled: false
 
+# Guard clauses obscure control flow by hiding conditionals after basic blocks. This is suboptimal since conditionals
+# and loops are the very constructs that make programs undecidable.
+Style/GuardClause:
+  Enabled: false
+
 # Don't convert `Hash[]` usage to `Array#to_h` if developers are more comfortable with the former.
 Style/HashConversion:
   Enabled: false
@@ -117,6 +122,10 @@ Style/NegatedIf:
 
 # Allow negated `if`/`else`s because the true and false conditions should be ordered based on their importance.
 Style/NegatedIfElseCondition:
+  Enabled: false
+
+# This autocorrects into a `next unless ...` guard clause, and we heavily discourage guard clauses.
+Style/Next:
   Enabled: false
 
 # Don't convert `foo > 0` to `foo.positive?` because simplicity supersedes brevity.
