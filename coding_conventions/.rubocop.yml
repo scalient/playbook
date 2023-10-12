@@ -136,6 +136,10 @@ Style/NumericPredicate:
 Style/RedundantBegin:
   Enabled: false
 
+# Don't remove leading `::`s because they might be there to increase clarity.
+Style/RedundantConstantBase:
+  Enabled: false
+
 # Don't convert `//` to `%r{}` if developers are more comfortable with the former.
 Style/RegexpLiteral:
   Enabled: false
