@@ -42,6 +42,10 @@ Layout/CaseIndentation:
 Layout/DotPosition:
   EnforcedStyle: trailing
 
+# Allow contiguous comment blocks that include magic comments at the very top of the file.
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
 # Align relative to the start of line for consistency.
 Layout/EndAlignment:
   EnforcedStyleAlignWith: start_of_line
