@@ -74,6 +74,10 @@ Layout/MultilineOperationIndentation:
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
 
+# Sometimes we want to name canonical blocks for clarity.
+Naming/BlockForwarding:
+  Enabled: false
+
 # Don't group accessors because simplicity supersedes brevity.
 Style/AccessorGrouping:
   Enabled: false
