@@ -91,6 +91,10 @@ Style/CollectionMethods:
   PreferredMethods:
     collect: map
 
+# Allow `!!expression` syntax as an idiomatic way to coerce into a boolean.
+Style/DoubleNegation:
+  Enabled: false
+
 # Allow `else`s consisting of only `nil`.
 Style/EmptyElse:
   EnforcedStyle: empty
